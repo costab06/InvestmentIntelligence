@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "investment-intelligence"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "secagent>=0.2.0,<0.3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+investment-report = "investment_intelligence.report:main"
+
+[tool.setuptools.packages.find]
+include = ["investment_intelligence*"]

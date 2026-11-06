@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0", "benchmark_id": "ii-cost-quality-v1", "questions": [
+    {"id":"NVDA-1","ticker":"NVDA","question":"Reconcile operating cash flow minus net income for the latest complete fiscal year; itemize the cash-flow statement adjustments and residual.","required_evidence":["fiscal period","OCF and net income","adjustment line items","residual and provenance"]},
+    {"id":"NVDA-2","ticker":"NVDA","question":"Is the receivables-related cash use consistent with revenue growth, or does it indicate collection deterioration? What evidence would discriminate?","required_evidence":["receivables change","revenue growth","DSO or limits","alternative explanations"]},
+    {"id":"NVDA-3","ticker":"NVDA","question":"Does inventory growth exceed business expansion, and what evidence would indicate excess inventory risk?","required_evidence":["inventory and cost of revenue","turnover trend","commitments","uncertainty"]},
+    {"id":"NVDA-4","ticker":"NVDA","question":"What do filings establish about supply and capacity commitments versus company-owned capital spending?","required_evidence":["contractual commitments","capital expenditures","filing provenance","classification limits"]},
+    {"id":"NVDA-5","ticker":"NVDA","question":"Has the operating cash conversion gap persisted over five fiscal years, and what are the strongest competing explanations?","required_evidence":["five annual periods","cash conversion ratios","working capital and noncash drivers","limitations"]},
+    {"id":"MSFT-1","ticker":"MSFT","question":"Reconcile operating cash flow minus net income for the latest complete fiscal year, including depreciation and amortization.","required_evidence":["OCF and net income","depreciation","other adjustments","residual"]},
+    {"id":"MSFT-2","ticker":"MSFT","question":"How much infrastructure investment is represented by capital expenditures versus finance lease additions?","required_evidence":["cash capex","finance lease additions","noncash distinction","period"]},
+    {"id":"MSFT-3","ticker":"MSFT","question":"What does the issuer disclose about AI infrastructure utilization and uncertainty in realizing revenue?","required_evidence":["specific disclosures","risk versus observed outcome","provenance","uncertainty"]},
+    {"id":"MSFT-4","ticker":"MSFT","question":"Can we establish returns on incremental AI infrastructure investment from disclosed segment economics?","required_evidence":["investment baseline","segment economics","allocation limits","no unsupported ROI"]},
+    {"id":"MSFT-5","ticker":"MSFT","question":"Compare five-year operating cash conversion and the extent to which noncash and working-capital adjustments explain it.","required_evidence":["five annual periods","cash conversion ratios","adjustment categories","residuals"]}
+  ]
+}

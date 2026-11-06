@@ -1,0 +1,25 @@
+framework_id: investment_statement_evaluation
+version: '1.0'
+assessment_values: [supports, contradicts, mixed, neutral, insufficient_evidence]
+materiality_values: [high, medium, low]
+confidence_values: [high, medium, low]
+principles:
+  - Validate factual claims independently before evaluating investment significance.
+  - Assess every statement on all twelve dimensions.
+  - Insufficient evidence is not neutral evidence.
+  - Management assertions establish what management said, not that the assertion is true.
+  - Never aggregate correlated dimensions into a weighted investment score.
+  - Only cite source evidence with an identified period and provenance.
+dimensions:
+  - {id: historical, question: 'How does this compare with the company historical performance?', evidence: [multiyear_financials]}
+  - {id: industry, question: 'How does this compare with industry economics and benchmarks?', evidence: [industry_benchmarks]}
+  - {id: competitive, question: 'Does this change the competitive position?', evidence: [competitor_disclosures, market_share]}
+  - {id: financial, question: 'What does this imply for financial performance and resilience?', evidence: [deterministic_financial_findings]}
+  - {id: valuation, question: 'What does this mean relative to the price paid?', evidence: [valuation_metrics, comparables]}
+  - {id: macroeconomic, question: 'How sensitive is the conclusion to economic conditions?', evidence: [macroeconomic_series]}
+  - {id: management_strategy, question: 'Does this align with management strategy and execution?', evidence: [mda, earnings_calls]}
+  - {id: operational, question: 'What operational drivers or constraints explain the development?', evidence: [operational_disclosures]}
+  - {id: risk, question: 'What could invalidate this interpretation?', evidence: [risk_disclosures, scenarios]}
+  - {id: temporal, question: 'Is this temporary, cyclical, or structural?', evidence: [multiperiod_financials, guidance]}
+  - {id: forward_looking, question: 'What are conditional future implications?', evidence: [guidance, scenarios]}
+  - {id: evidence_quality, question: 'How complete, timely, corroborated and consistent is the evidence?', evidence: [provenance, contradictions]}

@@ -1,0 +1,30 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated reports
+reports/
+
+# Patch archives
+*.zip
+
+# OS/editor temporary files
+.DS_Store
+*~
